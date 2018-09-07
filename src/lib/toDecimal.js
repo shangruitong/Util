@@ -1,6 +1,6 @@
 
 module.exports = function toDecimal(x, n) {
-    n = n || 1;
+    n = typeof n === 'undefined' ? 1 : n;
     var ratio = Math.pow(10, n);
     var f = Math.round(x * ratio) / ratio;
     var s = f.toString();
