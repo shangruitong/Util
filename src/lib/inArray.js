@@ -2,10 +2,10 @@
 function inArray(search,array){
     for(var i in array){
         if(array[i]==search){
-            return i;
+            return true;
         }
     }
-    return -1;
+    return false;
 }
 
 module.exports = inArray;
